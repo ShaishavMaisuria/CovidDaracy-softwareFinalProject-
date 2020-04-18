@@ -1,4 +1,7 @@
 #Author Shaishav Maisuria
+#Use similar code given in visualization lab and we need to implement
+#line chart and barchart with dashboard.
+# decide and add more features
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
