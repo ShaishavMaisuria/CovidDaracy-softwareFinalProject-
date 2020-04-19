@@ -13,68 +13,48 @@ df2.iloc[:,5]
 header=list(df2.head(0))
 header=header[5:]
 #print(header)dicForRowColumn={}
-dicForRowColumnDeath = {}
-dicAllRowColumnDeath = {}
-dicForRowSumDeath = {}
-dicAllRowSumDeath = {}
-TotalDeathCases = 0
+dicForRowColumnDeathGlobally = {}
+dicAllRowColumnDeathGlobally = {}
+dicForRowSumDeathGlobally = {}
+dicAllRowSumDeathGlobally = {}
+TotalDeathCasesGlobally = 0
 
 for row in header:
-    columnDeath = df2.loc[:, row]
+    columnDeathGlobally = df2.loc[:, row]
     date = row
 
-    columnDeath = list(columnDeath)
-    sumPerDay = sum(columnDeath)
+    columnDeathGlobally = list(columnDeathGlobally)
+    sumPerDay = sum(columnDeathGlobally)
     # print("sum Per day:",sumPerDay)
-    TotalDeathCases += sumPerDay
+    TotalDeathCasesGlobally += sumPerDay
     # print("Total Number of Cases:",TotalCases)
-    newdf = pd.DataFrame(columnDeath)
-    dicForRowColumnDeath.clear()
-    dicForRowColumnDeath = {
-        date: columnDeath
+    newdf = pd.DataFrame(columnDeathGlobally)
+    dicForRowColumnDeathGlobally.clear()
+    dicForRowColumnDeathGlobally = {
+        date: columnDeathGlobally
     }
-    dicAllRowColumnDeath.update(dicForRowColumnDeath)
-    dicForRowSumDeath = {
+    dicAllRowColumnDeathGlobally.update(dicForRowColumnDeathGlobally)
+    dicForRowSumDeathGlobally = {
         date: sumPerDay
     }
-    dicAllRowSumDeath.update(dicForRowSumDeath)
+    dicAllRowSumDeathGlobally.update(dicForRowSumDeathGlobally)
 
-print(dicAllRowSumDeath)
+print(dicAllRowSumDeathGlobally)
 # print(dic2)
 # print("Total Number of Cases:",TotalCases)
 date = header
 print("-------------------")
 print(date)
 
-dataframeDeathNew=pd.DataFrame(dicAllRowSumDeath, index=[0])
+dataframeDeathNew=pd.DataFrame(dicAllRowSumDeathGlobally, index=[0])
 print(dataframeDeathNew)
 date=dataframeDeathNew.keys()
 print(date)
-data=dataframeDeathNew.values[0]
-print(data)
-
-data_linechart = [go.Scatter(x=date, y=data, mode='lines', name='Death')]
-
-# Preparing layout
-layout = go.Layout(title='Corona Virus Death', xaxis_title="Date",
-                   yaxis_title="Number of cases")
-
-# Plot the figure and saving in a html file
-fig = go.Figure(data=data_linechart, layout=layout)
-pyo.plot(fig, filename='linechart.html')
+dataDeathGlobally=dataframeDeathNew.values[0]
+print(dataDeathGlobally)
 
 
 
 
-print("-------------------")
 
-dataframeDeathNew=pd.DataFrame(dicAllRowSumDeath, index=[0])
 
-print(dataframeDeathNew)
-
-#values
-print("data frame values")
-date=dataframeDeathNew.keys()
-print(date)
-data=dataframeDeathNew.values[0]
-print(data)

@@ -51,38 +51,3 @@ date=dataframeNew.keys()
 print(date)
 data=dataframeNew.values[0]
 print(data)
-
-data_linechart = [go.Scatter(x=date, y=data, mode='lines', name='Death')]
-
-# Preparing layout
-layout = go.Layout(title='Corona Virus Confirmed Cases From 2020-01-22 to 2020-03-17', xaxis_title="Date",
-                   yaxis_title="Number of cases")
-
-# Plot the figure and saving in a html file
-fig = go.Figure(data=data_linechart, layout=layout)
-pyo.plot(fig, filename='linechart.html')
-
-
-
-
-print("-------------------")
-
-dataframeNew=pd.DataFrame(dicAllRowSum,index=[0])
-
-print(dataframeNew)
-
-#values
-print("data frame values")
-date=dataframeNew.keys()
-print(date)
-data=dataframeNew.values[0]
-print(data)
-
-len(data)
-from Plots import TotalDeathUs as td
-
-recovered= data - td.usDeath
-len(recovered)
-print(recovered)
-
-

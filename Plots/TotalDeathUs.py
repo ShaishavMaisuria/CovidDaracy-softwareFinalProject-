@@ -19,6 +19,8 @@ print(usDeath)
 TotalusDeath=usDeath[-1]
 print(TotalusDeath)
 
-#to do
+
+
+# to do
 # make list which show number of death per day not the sum till that date
 
