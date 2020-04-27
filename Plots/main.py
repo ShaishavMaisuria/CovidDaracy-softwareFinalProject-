@@ -40,3 +40,28 @@ pyo.plot(fig, filename='linechart.html')
 #example over
 
 
+
+data_linechart = [go.Scatter(x=date, y=tdus.usDeath, mode='lines', name='Death')]
+
+# Preparing layout
+layout = go.Layout(title='Corona death cases us', xaxis_title="Date",
+                   yaxis_title="Number of cases")
+
+# Plot the figure and saving in a html file
+fig = go.Figure(data=data_linechart, layout=layout)
+pyo.plot(fig, filename='linechart.html')
+
+
+
+data_linechart = [go.Scatter(x=date, y=tdw.dataDeathGlobally, mode='lines', name='Death')]
+
+# Preparing layout
+layout = go.Layout(title='Corona death cases globally', xaxis_title="Date",
+                   yaxis_title="Number of cases")
+
+# Plot the figure and saving in a html file
+fig = go.Figure(data=data_linechart, layout=layout)
+pyo.plot(fig, filename='linechart.html')
+
+
+
