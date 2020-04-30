@@ -1,6 +1,8 @@
 #includes us death
 #Author Shaishav Maisuria
 
+#JHU datasets
+# link website https://github.com/CSSEGISandData/COVID-19
 import pandas as pd
 
 

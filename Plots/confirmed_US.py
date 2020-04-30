@@ -1,11 +1,12 @@
 #Author Shaishav Maisuria
 #this is main code file which includes interactive line chart
-import os
-import csv
-from collections import defaultdict
-import plotly.graph_objs as go
+
+#JHU datasets
+# link website https://github.com/CSSEGISandData/COVID-19
+
+
 import pandas as pd
-import plotly.offline as pyo
+
 
 df2 = pd.read_csv(r"C:\Users\maisu\PycharmProjects\Test\Datasets\time_series_covid19_confirmed_US.csv")
 

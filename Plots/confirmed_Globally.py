@@ -1,8 +1,10 @@
 #Author Shaishav Maisuria
 #this is main code file which includes interactive line chart
-import os
-import csv
-from collections import defaultdict
+
+#JHU datasets
+# link website https://github.com/CSSEGISandData/COVID-19
+
+
 import plotly.graph_objs as go
 import pandas as pd
 import plotly.offline as pyo
@@ -18,6 +20,7 @@ dicAllRowColumnConfirmedGlobally = {}
 dicForRowSumConfirmedGlobally = {}
 dicAllRowSumConfirmedGlobally = {}
 TotalCasesConfirmedGlobally = 0
+#goes vertically and added the data based on csv format
 for row in header:
     column = df2.loc[:, row]
     date = row
@@ -79,11 +82,6 @@ dataConfirmedGlobally=dataframeNew.values[0]
 print(dataConfirmedGlobally)
 
 len(dataConfirmedGlobally)
-from Plots import TotalDeathUs as td
 
-
-recovered= dataConfirmedGlobally - td.usDeath
-len(recovered)
-print(recovered)
 
 

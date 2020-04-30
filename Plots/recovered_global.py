@@ -1,13 +1,13 @@
 #this is file which plot recovered cases of entire world
 # No file was avaible for any recovered cases for us for JHU website
 #Author Shaishav Maisuria
-import os
-import csv
-from collections import defaultdict
+
 import plotly.graph_objs as go
 import pandas as pd
 import plotly.offline as pyo
 
+#JHU datasets
+# link website https://github.com/CSSEGISandData/COVID-19
 df2 = pd.read_csv(r"C:\Users\maisu\PycharmProjects\Test\Datasets\time_series_covid19_recovered_global.csv")
 # link website https://github.com/CSSEGISandData/COVID-19
 df2.iloc[:,4]

@@ -55,13 +55,46 @@ pyo.plot(fig, filename='linechart.html')
 
 data_linechart = [go.Scatter(x=date, y=tdw.dataDeathGlobally, mode='lines', name='Death')]
 
-# Preparing layout
+# Preparing layout 
 layout = go.Layout(title='Corona death cases globally', xaxis_title="Date",
                    yaxis_title="Number of cases")
 
 # Plot the figure and saving in a html file
 fig = go.Figure(data=data_linechart, layout=layout)
 pyo.plot(fig, filename='linechart.html')
+
+#for trying
+
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
+
+# Create figure with secondary y-axis
+fig = make_subplots(specs=[[{"secondary_y": True}]])
+
+# Add traces
+fig.add_trace(
+    go.Scatter(x=date, y=tdus.usDeath, mode='lines', name='Death in US'),
+    secondary_y=False,
+)
+
+fig.add_trace(
+    go.Scatter(x=date, y=tdw.dataDeathGlobally, mode='lines', name='Death in Globally'),
+    secondary_y=True,
+)
+
+# Add figure title
+fig.update_layout(
+    title_text="Double Y Axis Example"
+)
+
+# Set x-axis title
+fig.update_xaxes(title_text="xaxis title")
+
+# Set y-axes titles
+fig.update_yaxes(title_text="<b>primary</b> yaxis title", secondary_y=False)
+fig.update_yaxes(title_text="<b>secondary</b> yaxis title", secondary_y=True)
+
+fig.show()
 
 
 
