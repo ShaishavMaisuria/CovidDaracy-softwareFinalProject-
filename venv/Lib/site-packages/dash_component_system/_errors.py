@@ -1,0 +1,2 @@
+class MissingPropError(TypeError):
+    pass

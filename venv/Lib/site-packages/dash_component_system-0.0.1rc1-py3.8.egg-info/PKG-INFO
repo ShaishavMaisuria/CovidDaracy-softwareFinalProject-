@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: dash-component-system
+Version: 0.0.1rc1
+Summary: React components for Python.
+Home-page: UNKNOWN
+Author: Philippe Duval
+Author-email: philippe@plot.ly
+License: MIT
+Description: # Dash component system
+        
+Keywords: dash,component,react
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Description-Content-Type: text/markdown

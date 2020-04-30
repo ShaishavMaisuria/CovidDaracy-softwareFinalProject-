@@ -1,0 +1,3 @@
+[console_scripts]
+build-dash-components = dash_component_system._cli:cli
+
