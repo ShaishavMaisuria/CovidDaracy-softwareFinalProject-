@@ -1,14 +1,16 @@
 #shaishav Maisuria
+#this is file includes different dataset and it has all different implemtation such as
+#date', 'states', 'positive', 'negative', 'pending', 'hospitalizedCurrently', 'hospitalizedCumulative', 'inIcuCurrently', 'inIcuCumulative', 'onVentilatorCurrently', 'onVentilatorCumulative', 'recovered', 'hash', 'dateChecked', 'death', 'hospitalized', 'posNeg', 'deathIncrease', 'hospitalizedIncrease', 'negativeIncrease', 'positiveIncrease', 'totalTestResultsIncrease'
 #dataset from Covid 19 Tracking
-#"NOTE: ""total"", ""posNeg"", ""hospitalized"" will be removed in the future." this is based on the repository so please keep in minnd
 #https://github.com/COVID19Tracking/covid-tracking-data/blob/master/data/us_daily.csv
+#"NOTE: ""total"", ""posNeg"", ""hospitalized"" will be removed in the future." this is based on the repository so please keep in minnd
 
 
 import pandas as pd
+import pathlib
 
 
-df2 = pd.read_csv(r"C:\Users\maisu\PycharmProjects\Test\DatasetCovid19Tracking\us_daily.csv")
-
+df2 = pd.read_csv(str(pathlib.Path().absolute())+r"\datasetsCovid19Tracking\us_daily.csv")
 
 
 header=list(df2.head(0))
@@ -49,3 +51,6 @@ hospitalizedIncrease=dicAllRow['hospitalizedIncrease']
 negativeIncrease=dicAllRow['negativeIncrease']
 positiveIncrease=dicAllRow['positiveIncrease']
 totalTestResultsIncrease=dicAllRow['totalTestResultsIncrease']
+
+
+

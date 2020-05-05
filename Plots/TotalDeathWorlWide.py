@@ -1,16 +1,20 @@
-#this is file which plot deaths of entire world
 #Author Shaishav Maisuria
-
-import pandas as pd
-
+#this is file which has deaths occured gloablly
 #JHU datasets
 # link website https://github.com/CSSEGISandData/COVID-19
-df2 = pd.read_csv(r"C:\Users\maisu\PycharmProjects\Test\Datasets\time_series_covid19_deaths_global.csv")
+
+import pandas as pd
+import pathlib
+
+
+
+df2 = pd.read_csv(str(pathlib.Path().absolute())+r"\datasetsJHU\time_series_covid19_deaths_global.csv")
+
 
 df2.iloc[:,5]
 header=list(df2.head(0))
 header=header[5:]
-#print(header)dicForRowColumn={}
+
 dicForRowColumnDeathGlobally = {}
 dicAllRowColumnDeathGlobally = {}
 dicForRowSumDeathGlobally = {}

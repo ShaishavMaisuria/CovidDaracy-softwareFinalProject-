@@ -1,12 +1,14 @@
-#includes us death
 #Author Shaishav Maisuria
-
+#includes us death
 #JHU datasets
 # link website https://github.com/CSSEGISandData/COVID-19
+
 import pandas as pd
+import pathlib
 
 
-df2 = pd.read_csv(r"C:\Users\maisu\PycharmProjects\Test\Datasets\time_series_covid19_deaths_global.csv")
+df2 = pd.read_csv(str(pathlib.Path().absolute())+r"\datasetsJHU\time_series_covid19_deaths_global.csv")
+
 
 df2.iloc[:,5]
 header=list(df2.head(0))
