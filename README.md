@@ -5,19 +5,19 @@ PLEASE READ THIS BEFORE DOWNLOADING AND RUNNING
 
 You must install the following packages in your Python IDE before running the code!
 
-from collections import defaultdict
-import plotly.graph_objs as go
-import pandas as pd
-import plotly.offline as pyo
-import dash
-import dash_core_components as dcc
-import dash_html_components as html
-from dash.dependencies import Input, Output
-from Plots import TotalDeathUs as tdus
-from Plots import TotalDeathWorlWide as tdw
-from Plots import confirmed_Globally as cg
-from Plots import confirmed_US as cus
-from Plots import recovered_global as rg
+from collections import defaultdict      
+import plotly.graph_objs as go      
+import pandas as pd       
+import plotly.offline as pyo       
+import dash      
+import dash_core_components as dcc      
+import dash_html_components as html      
+from dash.dependencies import Input, Output     
+from Plots import TotalDeathUs as tdus     
+from Plots import TotalDeathWorlWide as tdw    
+from Plots import confirmed_Globally as cg     
+from Plots import confirmed_US as cus     
+from Plots import recovered_global as rg     
 
 Thank you for understanding!
 
