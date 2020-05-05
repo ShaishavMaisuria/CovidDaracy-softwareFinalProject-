@@ -23,7 +23,8 @@ Thank you for understanding!
 
 
 Datasets have been acquired from the following github repositories
-JHU - https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series     
+JHU - https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series   
+     
 CovidTrackingApp - https://github.com/COVID19Tracking/covid-tracking-data     
 
 
