@@ -40,4 +40,4 @@ CovidTrackingApp - https://github.com/COVID19Tracking/covid-tracking-data    
 
 This is for a software engineering class project. This repository and code are purely used for educational purposes.
 
-Thank you for understanding!
+Thank you for reading!
