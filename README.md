@@ -29,7 +29,7 @@ from Plots import recovered_global as rg
 
 
 # Datasets 
-Datasets have been acquired from the following GitHub repositories:    
+Datasets have been acquired from the following GitHub repositories: 
    
 Johns Hopkins Whiting School of engineering - https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series       
        
