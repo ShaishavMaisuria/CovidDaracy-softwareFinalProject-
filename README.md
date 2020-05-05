@@ -3,6 +3,12 @@ PLEASE READ THIS BEFORE DOWNLOADING AND RUNNING
 
 PLEASE READ THIS BEFORE DOWNLOADING AND RUNNING
 
+# Project Description:
+Overall, the idea for this project is to analyze the number of cases of COVID-19 and the fatality rate. Using this data we created a chart that constantly updates with new information about cases in the US and possibly around the world and to provide an accurate number of cases. Using varioius datasets we combined the different features together.
+
+# File description: 
+User is suppose to run the main.py in order to obtain results displayed using dash
+
 You must install the following packages in your Python IDE before running the code!
 
 from collections import defaultdict      
@@ -19,16 +25,18 @@ from Plots import confirmed_Globally as cg
 from Plots import confirmed_US as cus     
 from Plots import recovered_global as rg     
 
-Thank you for understanding!
 
 
+# Datasets 
 Datasets have been acquired from the following github repositories:
    
-JHU - https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series   
+Johns Hopkins Whiting school of engineering - https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series   
      
 CovidTrackingApp - https://github.com/COVID19Tracking/covid-tracking-data     
 
 
+
+
 This is for a software engineering class project. This repository and code is purely used for educational purposes.
 
-
+Thank you for understanding!
