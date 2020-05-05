@@ -16,13 +16,14 @@ import pandas as pd
 import dash        
 import dash_core_components as dcc       
 import dash_html_components as html              
+import pathlib    
 from Plots import TotalDeathUs as tdus     
 from Plots import TotalDeathWorlWide as tdw     
 from Plots import confirmed_Globally as cg    
 from Plots import confirmed_US as cus    
 from Plots import recovered_global as rg      
 from Plots import covidTrackingUs as tds     
-import pathlib    
+   
 
 
 # Datasets 
