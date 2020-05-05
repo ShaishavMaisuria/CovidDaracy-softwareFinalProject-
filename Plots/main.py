@@ -4,15 +4,12 @@
 
 
 # please keep all the imports as we will use it
-import csv
-from collections import defaultdict
+
 import plotly.graph_objs as go
-import pandas as pd
-import plotly.offline as pyo
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
-from dash.dependencies import Input, Output
+
 
 # as you import the files it will run it back ground once you run this file so will see multiple charts when you run this program
 from Plots import TotalDeathUs as tdus
