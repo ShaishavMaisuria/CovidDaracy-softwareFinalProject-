@@ -11,7 +11,8 @@ User is supposed to run the main.py in order to obtain results displayed using t
 
 You must install the following packages in your Python IDE before running the code!
 
-from collections import defaultdict             
+from collections import defaultdict 
+
 import plotly.graph_objs as go                   
 import pandas as pd         
 import plotly.offline as pyo        
