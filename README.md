@@ -11,27 +11,27 @@ User is supposed to run the main.py in order to obtain results displayed using t
 
 You must install the following packages in your Python IDE before running the code!
 
-from collections import defaultdict      
-import plotly.graph_objs as go
-import pandas as pd
-import plotly.offline as pyo
-import dash
-import dash_core_components as dcc
-import dash_html_components as html
-from dash.dependencies import Input, Output
-from Plots import TotalDeathUs as tdus
-from Plots import TotalDeathWorlWide as tdw
-from Plots import confirmed_Globally as cg
-from Plots import confirmed_US as cus
-from Plots import recovered_global as rg
+from collections import defaultdict             
+import plotly.graph_objs as go            
+import pandas as pd         
+import plotly.offline as pyo        
+import dash        
+import dash_core_components as dcc       
+import dash_html_components as html        
+from dash.dependencies import Input, Output       
+from Plots import TotalDeathUs as tdus     
+from Plots import TotalDeathWorlWide as tdw     
+from Plots import confirmed_Globally as cg    
+from Plots import confirmed_US as cus    
+from Plots import recovered_global as rg      
 
 
 
 # Datasets 
-Datasets have been acquired from the following GitHub repositories:
+Datasets have been acquired from the following GitHub repositories:    
    
-Johns Hopkins Whiting School of engineering - https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series   
-     
+Johns Hopkins Whiting School of engineering - https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series       
+       
 CovidTrackingApp - https://github.com/COVID19Tracking/covid-tracking-data     
 
 
